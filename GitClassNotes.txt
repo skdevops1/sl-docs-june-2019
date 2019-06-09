@@ -1,3 +1,115 @@
 ###############################
 ##Git Class Notes
 ###############################
+
+Agenda
+
+- Why SCM/VCS?
+- Distributed vs Centralized
+- Git Introduction
+- Installation and Configuration
+- Standard Operations in Git => Git Commands
+
+Why SCM/VCS?
+  - Versioning
+  - Collaboration
+  - Automated Backups
+  - branching capabilities
+  - Auditing (investigation)
+
+Repository?
+
+ApplicationA => repository AppA => repo
+ApplicationB  => repository AppB
+
+
+Types of VCS:
+  Local (FileSystem)          => SCCS, RCS
+  Centralized (Client-Server) => SVN, TFS, Accurev, Perforce
+  Distributed                 => Git, Mercurial, Bazaar
+
+
+
+Distributions or Flavors
+Inventor of Linux => Linus Torvalds
+
+Linux => Redhat / Ubuntu / Debian (MIT / Apache 2.0)
+Git => GitLab / GitHub / BitBucket / Stash / gitlist / Gitsmart / Git Kraken
+Git-as-a-Service
+
+Public Repository
+Private Repository
+
+===============================
+Installation
+===============================
+Official Page: https://git-scm.com/
+
+Installation Commands:
+
+sudo apt-get install git (## on Ubuntu)
+sudo yum install git (## on CentOS or RHEL)
+
+For Windows or Mac, follow instructions on the Official Git page.
+
+root@master:~# git --version
+git version 2.7.4
+
+Author profile setup:
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+git config --list
+
+===============================
+Git Commands
+===============================
+git init => initialize a new git repo
+git status
+git add . => tracking the files (also known as staging)
+git commit -a -m "your commit message"
+  -a => add/stage
+  -m => commit message
+git log
+git clone https://github.com/sk12k/sl-docs-june-2019.git
+git push
+git pull
+git pull <remotename> <branchname>
+git pull origin master
+git remote
+git remote -v
+git remote add <remotename> <remoteURL>
+Pull vs Clone => Clone is first time, Pull/Push is for subsequent operations to keep your repository in sync.
+Pull = Fetch + Merge
+
+
+
+Branching and Merging
+Merge Conflicts
+Pull Request
+
+
+
+
+https://github.com/sk12k/sl-docs-june-2019.git
+https://github.com/sk12k/sl-docs-june-2019.git
+
+
+
+
+
+Linux commands to familiarize:
+  - touch
+  - echo
+  - cd
+  - ll (ls -al)
+  - mkdir
+  - cat
+  - pwd
+
+
+
+References:
+https://github.com/sk12k/tr-files/tree/master/git
+
+
+.
